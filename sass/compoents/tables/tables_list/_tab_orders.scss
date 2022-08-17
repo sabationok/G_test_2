@@ -1,0 +1,128 @@
+.table {
+  position: relative;
+  display: block;
+
+  border-collapse: collapse;
+
+  table-layout: fixed;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  margin: 0;
+
+  & .thead {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    font-size: var(--th-font-size__secondary);
+    font-weight: var(--th-font-weight);
+
+    background-color: var(--table-hdr-clr);
+    background-color: var(--table-hdr-clr__primary);
+    box-shadow: 0px 0px 5px rgb(0 0 0 / 20%);
+
+    & .row-hdr {
+      height: 32px;
+      padding: 4px 8px 4px;
+    }
+  }
+  & .tbody {
+    font-weight: 400;
+    font-size: var(--td-font-size__secondary);
+    line-height: 1.27;
+    color: var(--font);
+    white-space: nowrap;
+
+    & .row {
+      height: 28px;
+
+      border-bottom: 1px solid var(--table-row-brdr-clr__primary);
+      &:nth-child(odd) {
+        background-color: var(--table-row-clr__primary);
+      }
+
+      & .col {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        vertical-align: middle;
+
+        padding: 4px 8px;
+
+        outline: var(--test-outline-d);
+
+        &:hover {
+          background-color: var(--td-bckrnd-clr__hover);
+        }
+        &:active {
+          outline: 2px solid var(--td-outline-clr);
+        }
+      }
+      &:hover {
+        background-color: var(--table-row-clr__hover);
+      }
+      &:active {
+        outline: 2px solid var(--td-outline-clr);
+      }
+    }
+  }
+  &.orders {
+    // & .tr {
+    //   &:nth-child(3) {
+    //     width: 300px;
+    //   }
+    // }
+    & .col {
+      &._1 {
+        min-width: 100px;
+      }
+      &._2 {
+        min-width: 135px;
+      }
+      &._3 {
+        max-width: 300px;
+      }
+      &._4 {
+        min-width: 105px;
+      }
+      &._5 {
+        min-width: 105px;
+      }
+      &._6 {
+        min-width: 105px;
+      }
+      &._7 {
+        min-width: 105px;
+      }
+      &._8 {
+        min-width: 105px;
+      }
+      &._9 {
+        min-width: 105px;
+      }
+      &._10 {
+        min-width: 105px;
+      }
+      &._11 {
+        min-width: 105px;
+      }
+      &._12 {
+        min-width: 105px;
+      }
+      &._13 {
+        min-width: 105px;
+      }
+      &._14 {
+        min-width: 105px;
+      }
+      &._15 {
+        min-width: 105px;
+      }
+      & ._16 {
+        min-width: 105px;
+      }
+    }
+  }
+}

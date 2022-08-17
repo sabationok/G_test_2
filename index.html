@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G_test_2</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- ШРИФТИ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- НОРМАЛІЗАТОР -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <!-- СТИЛІ -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- ШАПКА САЙТУ -->
+    <header class="header">
+      <div class="flex spc-btwn">
+        <!-- NAV MENU -->
+        <div class="flex center__nav">
+          <!-- NAV BUTTON -->
+          <div class="btn_gen icon btn-nav mrgn_r__5">
+            <img class="icon-svg" src="./icons/icons-header/icon-apps.svg" alt="apps" />
+            <!-- nav links -->
+            <div class="nav-menu">
+              <ul class="nav-list">
+                <li>
+                  <a class="btn_gen text xxl current" href="./index.html"> Головна </a>
+                </li>
+                <li>
+                  <a class="btn_gen text xxl" href="./products-mngr.html"> Товари </a>
+                </li>
+                <li>
+                  <a class="btn_gen text xxl" href="./orders_mngr.html"> Замовлення </a>
+                </li>
+                <li>
+                  <a class="btn_gen text xxl" href="./refunds-mngr.html"> Повернення </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- LOGO GENDLIAR -->
+          <div class="box-logo">
+            <a href="./index.html">
+              <img class="icon-logo" src="./icons/logo/Logo2.png" alt="GENDLIAR" />
+            </a>
+          </div>
+        </div>
+        <!-- button notification -->
+        <div class="flex center">
+          <button class="btn_gen icon" type="button">
+            <img class="icon-svg" src="./icons/icons-header/icon-notification-unread.svg" alt="" />
+          </button>
+          <!-- batton manager choise -->
+          <button class="btn_gen text xxl mrgn_l__5" type="button">Manager 0025</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- БЛОК СПИСОК ТОВАРІВ -->
+
+      <!-- ТАБЛИЦЯ список товарів -->
+      <section class="section flex">
+        <div class="block table products">
+          <header class="hdr sticku top l">
+            <!-- Founder + Filtr -->
+            <div class="flex">
+              <div class="form-founder">
+                <!-- Founder -->
+                <form class="">
+                  <label>
+                    <span class="founder">
+                      <input
+                        class="inp__found"
+                        type="text"
+                        name="founder"
+                        placeholder="Пошук ..."
+                      />
+                    </span>
+                  </label>
+                </form>
+                <!-- Filtr -->
+                <button class="btn_gen mrgn_r__10" type="button">Фільтрувавти</button>
+              </div>
+              <button class="btn_gen mrgn_r__10" type="button">Нові (12)</button>
+              <button class="btn_gen" type="button">Приховані (159)</button>
+            </div>
+          </header>
+
+          <main class="main">
+            <div class="overflow">
+              <main class="content">
+                <!-- // -->
+
+                <!-- // -->
+              </main>
+            </div>
+          </main>
+
+          <footer class="ftr sticky_btm_l"></footer>
+        </div>
+      </section>
+
+      <!-- РОБОТА ІЗ ТОВАРАМИ -->
+      <section class="section flex center__wrap gap__16">
+        <!-- Блок деталі товару -->
+        <div class="block info product">
+          <header class="hdr sticky_top_l">
+            <span> ЗАГОЛОВОК БЛОКУ </span>
+          </header>
+
+          <main class="main">
+            <div class="overflow">
+              <header></header>
+
+              <div class="content">
+                <!-- // -->
+
+                <!-- // -->
+              </div>
+
+              <div class="bottom sticky_btm_l">
+                <div class="flex center__nowrap gap">
+                  <button class="btn_gen accept" type="button">Прийняти</button>
+                  <button class="btn_gen decline" type="button">Скасувати</button>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="ftr sticky_btm_l">
+            <span></span>
+          </footer>
+        </div>
+
+        <!-- Блок складські залишки -->
+        <div class="block ttn">
+          <header class="hdr sticky top l">
+            <span> ЗАГОЛОВОК БЛОКУ </span>
+          </header>
+
+          <main class="main">
+            <div class="overflow">
+              <header></header>
+              <!-- // -->
+              <div class="content"></div>
+              <!-- // -->
+              <div class="bottom sticky_btm_l">
+                <div class="flex center__nowrap">
+                  <button class="btn_gen accept" type="button">Прийняти</button>
+
+                  <button class="btn_gen decline" type="button">Скасувати</button>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <footer class="ftr sticky_btm_l">
+            <span></span>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

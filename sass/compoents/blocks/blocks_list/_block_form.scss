@@ -1,0 +1,133 @@
+.section-v {
+  margin: 20px;
+  height: 100%;
+
+  outline: 1px solid tomato;
+  &.flex {
+    display: flex;
+
+    align-items: center;
+    &.row_wrap {
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      flex-basis: 300px;
+    }
+    &.col {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  & .info {
+    min-width: 500px;
+    max-width: 1000px;
+    flex-grow: 5;
+  }
+  & .stock {
+    min-width: 500px;
+    max-width: 800px;
+    flex-grow: 1;
+  }
+  & .box {
+    position: relative;
+
+    outline: 1px solid tomato;
+    & .hdr {
+      height: 20px;
+      width: 100%;
+      background-color: aqua;
+      &.sticky {
+        position: sticky;
+        top: 0;
+        left: 100%;
+      }
+    }
+    & .main {
+      overflow: auto;
+      min-height: 250px;
+      height: calc(100% - 40px);
+
+      margin: 0 15px 0;
+      background-color: rgb(107, 54, 250);
+    }
+    & .ftr {
+      height: 20px;
+      width: 100%;
+      background-color: aqua;
+      &.sticky {
+        position: sticky;
+        top: 100%;
+        left: 0;
+      }
+    }
+    & .overflow {
+      overflow: auto;
+      position: relative;
+    }
+  }
+}
+
+.section-v {
+  margin: 20px;
+  height: 100%;
+  outline: 1px solid tomato;
+}
+.section-v.flex {
+  display: flex;
+  align-items: center;
+}
+.section-v.flex.row_wrap {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-basis: 300px;
+}
+.section-v.flex.col {
+  flex-direction: column;
+  justify-content: center;
+}
+.section-v .info {
+  min-width: 500px;
+  max-width: 1000px;
+  flex-grow: 5;
+}
+.section-v .stock {
+  min-width: 500px;
+  max-width: 800px;
+  flex-grow: 1;
+}
+.section-v .box {
+  position: relative;
+  outline: 1px solid tomato;
+}
+.section-v .box .hdr {
+  height: 20px;
+  width: 100%;
+  background-color: aqua;
+}
+.section-v .box .hdr.sticky {
+  position: sticky;
+  top: 0;
+  left: 100%;
+}
+.section-v .box .main {
+  overflow: auto;
+  min-height: 250px;
+  height: calc(100% - 40px);
+  margin: 0 15px 0;
+  background-color: #6b36fa;
+}
+.section-v .box .ftr {
+  height: 20px;
+  width: 100%;
+  background-color: aqua;
+}
+.section-v .box .ftr.sticky {
+  position: sticky;
+  top: 100%;
+  left: 0;
+}
+.section-v .box .overflow {
+  overflow: auto;
+  position: relative;
+}

@@ -1,0 +1,26 @@
+/* ----------------- SCROLLBAR */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+// bimp
+//   --scrollbar-top-offset: 0px;
+//   --scrollbar-bottom-offset: 0px;
+//   --scrollbar-left-offset: 0px;
+//   --scrollbar-right-offset: 0px;

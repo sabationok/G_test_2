@@ -1,0 +1,39 @@
+У кінці <body>
+<script src="./js/modal.js"></script>
+у файл ./js/modal.js прописати скрипт
+[data-modal-open] - у кінець тегу кнопки що відкриває
+[data-modal-close] - у кінець тегу кнопки що закриває
+("is-hidden") - клас який видалиться для показу випадайки
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
+
+  refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.closeModalBtn.addEventListener("click", toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
+Цей скрипт по суті просто забирає клас із тега, і таким чином деякі правила із css пропадають. Наприклад ті які приховують модальне вікно чи іншу випадайку.
+
+<<<===============================
+
+скрипт мобільного меню menu.js
+(() => {
+  const menuBtnRef = document.querySelector("[data-menu-button]");
+  const mobileMenuRef = document.querySelector("[data-menu]");
+
+  menuBtnRef.addEventListener("click", () => {
+    const expanded =
+      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+    menuBtnRef.classList.toggle("is-open");
+    menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+    mobileMenuRef.classList.toggle("is-open");
+  });
+})();

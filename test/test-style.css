@@ -1,0 +1,49 @@
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid red;
+}
+
+th, 
+td {
+  border: 1px dashed blue;
+  white-space: pre-wrap;
+}
+
+td {
+  height: 20px;
+  width: 50px;
+  white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div {
+  width: 50px;
+  height: 20px;
+  border: 1px solid red;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table-flex {
+  display: flex;
+  margin: 10px;
+
+  white-space: nowrap;
+}
+
+.tcolumn-1-ttn {
+
+  outline: 1px solid tomato;
+}
+
+.tcolumn-2-ttn {
+
+  outline: 1px solid tomato;
+}
+
+.table-flex li {
+
+  outline: 1px solid tomato;
+}

@@ -1,0 +1,99 @@
+@import './root_variables/colors';
+@import './root_variables/fonts';
+@import './root_variables/shadows';
+@import './root_variables/variabls';
+html {
+  box-sizing: border-box;
+  /* відміняє синій фон при дотику по обєктах на тачскірінах */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  background-color: #ffffff;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  margin: 0px;
+}
+.outline {
+  outline: var(--testing-brdr-wght) solid var(--testing-brdr-clr);
+}
+.section {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+/* ----------------- НОРМАЛІЗАЦІЯ -------------- */
+/*  ЗАГОЛОВКИ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+/* ПАРАГРАФИ  */
+p {
+  margin: 0;
+}
+/* ТАБЛИЦі */
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0;
+}
+th,
+td {
+  /* display: table-cell; */
+  /* display: grid; */
+  /* display: inline-table; */
+  border: 0;
+  padding: 0;
+  margin: 0;
+
+  user-select: none;
+}
+/* СПИСКИ */
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0px;
+}
+/* ПОСИЛАННЯ */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* АДРЕСИ */
+address {
+  font-style: normal;
+}
+/* ЗОБРАЖЕННЯ */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* КНОПКИ */
+button {
+  user-select: none;
+  cursor: pointer;
+}
+/* ----------------- СКРИТІ ЕЛЕМЕНТИ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

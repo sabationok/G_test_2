@@ -1,0 +1,32 @@
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  opacity: 0;
+  pointer-events: none;
+
+  padding: 10px;
+
+  user-select: none;
+
+  box-shadow: var(--button-shadow-hover);
+  background-color: #ffffff;
+}
+.nav-menu {
+  & .btn_gen {
+    margin-bottom: 10px;
+  }
+}
+.btn-nav {
+  &:focus-within,
+  &:focus,
+  &:hover,
+  &:active {
+    & .nav-menu {
+      opacity: 1;
+      pointer-events: all;
+      cursor: default;
+    }
+  }
+}

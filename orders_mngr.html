@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G_test_2</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- ШРИФТИ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- НОРМАЛІЗАТОР -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <!-- СТИЛІ -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- ШАПКА САЙТУ -->
+    <header class="header">
+      <div class="flex spc-btwn">
+        <!-- NAV MENU -->
+        <div class="flex center__nav">
+          <!-- NAV BUTTON -->
+          <div class="btn_gen icon btn-nav mrgn_r__5">
+            <img class="icon-svg" src="./icons/icons-header/icon-apps.svg" alt="apps" />
+            <!-- nav links -->
+            <div class="nav-menu">
+              <ul class="nav-list">
+                <li>
+                  <a class="btn_gen text xxl" href="./index.html"> Головна </a>
+                </li>
+                <li>
+                  <a class="btn_gen text xxl" href="./products-mngr.html"> Товари </a>
+                </li>
+                <li>
+                  <a class="btn_gen text xxl current" href="./orders-mngr.html"> Замовлення </a>
+                </li>
+                <li>
+                  <a class="btn_gen text xxl" href="./refunds-mngr.html"> Повернення </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- LOGO GENDLIAR -->
+          <div class="box-logo">
+            <a href="./index.html">
+              <img class="icon-logo" src="./icons/logo/Logo2.png" alt="GENDLIAR" />
+            </a>
+          </div>
+        </div>
+        <!-- button notification -->
+        <div class="flex center">
+          <button class="btn_gen icon" type="button">
+            <img class="icon-svg" src="./icons/icons-header/icon-notification-unread.svg" alt="" />
+          </button>
+          <!-- batton manager choise -->
+          <button class="btn_gen text xxl mrgn_l__5" type="button">Manager 0025</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- БЛОК СПИСОК -->
+
+      <!-- ТАБЛИЦЯ списоr -->
+      <section class="section flex">
+        <div class="block table products">
+          <header class="hdr sticki top l">
+            <!-- Founder + Filtr -->
+            <div class="flex center__wrap gap__10">
+              <div class="form-founder">
+                <!-- Founder -->
+                <form class="">
+                  <label>
+                    <span class="founder">
+                      <input
+                        class="inp__found"
+                        type="text"
+                        name="founder"
+                        placeholder="Пошук ..."
+                      />
+                    </span>
+                  </label>
+                </form>
+                <!-- Filtr -->
+                <button class="btn_gen mrgn_r__10" type="button">Фільтрувавти</button>
+              </div>
+              <button class="btn_gen mrgn_r__10" type="button">Нові (12)</button>
+              <button class="btn_gen" type="button">Приховані (159)</button>
+            </div>
+          </header>
+
+          <main class="main">
+            <div class="overflow">
+              <header></header>
+
+              <main class="content">
+                <!-- // -->
+                <table class="table orders">
+                  <!-- // -->
+                  <thead class="thead">
+                    <tr class="row-hdr">
+                      <th class="col _1">1 Дата</th>
+                      <th class="col _2">2 Замовлення №</th>
+                      <th class="col _3">3 Вміст замволення (артикули)</th>
+                      <th class="col _4">4 Кількість од.</th>
+                      <th class="col _5">5 Вартість</th>
+                      <th class="col _6">6 Менеджер</th>
+                      <th class="col _7">7 Статус</th>
+                      <th class="col _8">8 Тип</th>
+                      <th class="col _9">9 ТТН</th>
+                      <th class="col _10">10 Оновлено</th>
+                      <th class="col _11">11 Пусто</th>
+                      <th class="col _12">12 Пусто</th>
+                      <th class="col _13">13 Пусто</th>
+                      <th class="col _14">14 Пусто</th>
+                      <th class="col _15">15 Пусто</th>
+                      <th class="col _16">16 Пусто</th>
+                    </tr>
+                  </thead>
+                  <!-- // -->
+                  <tbody class="tbody">
+                    <tr class="row _1">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _2">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _3">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _4">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _5">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _6">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _7">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _8">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                    <tr class="row _9">
+                      <!-- Date -->
+                      <td class="col _1">06/06/2022</td>
+                      <!-- Order # -->
+                      <td class="col _2">b54b6df51gbd</td>
+                      <!-- Order in -->
+                      <td class="col _3">v02-g12245-art654651, v02-g12245-art561sd15</td>
+                      <!-- Quonity -->
+                      <td class="col _4">5</td>
+                      <!-- Value -->
+                      <td class="col _5">12500</td>
+                      <!-- Manager -->
+                      <td class="col _6">0025</td>
+                      <!-- Status -->
+                      <td class="col _7">У роботі</td>
+                      <!-- Type -->
+                      <td class="col _8">Складне</td>
+                      <!-- TTN -->
+                      <td class="col _9">5654616448, 516845516, 5681651654</td>
+                      <!-- Last update -->
+                      <td class="col _10">05.07.2022</td>
+                      <!-- EMPTY -->
+                      <td class="col _11">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _12">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _13">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _14">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _15">---</td>
+                      <!-- EMPTY -->
+                      <td class="col _16">---</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- // -->
+              </main>
+
+              <footer></footer>
+            </div>
+          </main>
+
+          <footer class="ftr">
+            <span></span>
+          </footer>
+        </div>
+      </section>
+
+      <!-- РОБОТА ІЗ ТОВАРАМИ -->
+      <section class="section flex center__wrap gap__16">
+        <!-- Блок деталі товару -->
+        <div class="block info product">
+          <header class="hdr sticky top l">
+            <span> ЗАГОЛОВОК БЛОКУ </span>
+          </header>
+
+          <main class="main">
+            <div class="overflow">
+              <header></header>
+
+              <main class="content">
+                <!-- // -->
+                <div class="container-tab-info">
+                  <table class="tab-order-info">
+                    <tbody>
+                      <tr>
+                        <!-- Дата Формування -->
+                        <td>Дата формування</td>
+                        <td>25.05.2022</td>
+                        <!-- Менеджер -->
+                        <td>Менеджер</td>
+                        <td>0025</td>
+                      </tr>
+                      <tr>
+                        <!-- Тип замовлення -->
+                        <td>Тип замовлення</td>
+                        <td>Складне</td>
+                        <!-- Статус -->
+                        <td>Статус</td>
+                        <td>На узгодженні</td>
+                      </tr>
+                      <tr>
+                        <!-- Загальна вартість -->
+                        <td>Загальна вартість</td>
+                        <td>25.000грн</td>
+                        <!-- Дата оновлення -->
+                        <td>Дата оновлення</td>
+                        <td>12.06.2022</td>
+                      </tr>
+                      <tr>
+                        <!-- Кількість артикулів -->
+                        <td>Кількість артикулів</td>
+                        <td>5</td>
+                        <!-- ТТН № -->
+                        <td>ТТН №</td>
+                        <td>156486165</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <p>ВМІСТ ЗАМОВЛЕННЯ</p>
+                <table>
+                  <thead class="thead-order-info">
+                    <tr>
+                      <!-- 1 Foto -->
+                      <th>1 Фото</th>
+                      <!-- 2 Product name -->
+                      <th>2 Назва товару</th>
+                      <!-- 3 SQU № -->
+                      <th>3 Артикул №</th>
+                      <!-- 4 Element № -->
+                      <th>4 Ел-нт №</th>
+                      <!-- 5 Atribute 1 -->
+                      <th>5 Атрибут 1</th>
+                      <!-- 6 Atribute 2 -->
+                      <th>6 Атрибут 2</th>
+                      <!-- 7 Amount -->
+                      <th>7 Кількість</th>
+                      <!-- 8 Price -->
+                      <th>8 Ціна</th>
+                      <!-- 9 Sum -->
+                      <th>9 Сума</th>
+                      <!-- 10 Available -->
+                      <th>10 Доступно</th>
+                      <!-- 11 Actions -->
+                      <th>11 Дії</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody-order-info">
+                    <!-- PRODUCT 1 -->
+                    <tr>
+                      <!-- 1 Foto -->
+                      <td>
+                        <img
+                          src="./images/products/v00-g10245-art561sd15.jpg"
+                          alt="v00-g10245-art561sd15"
+                        />
+                      </td>
+                      <!-- 2 Product name -->
+                      <td>Комбінезон жіночий Ralph Lauren</td>
+                      <!-- 3 SQU № -->
+                      <td><span>Art.</span> v02-g12245-art654651</td>
+                      <!-- 4 Element № -->
+                      <td>1/5</td>
+                      <!-- 5 Atribute 1 -->
+                      <td>Зелений</td>
+                      <!-- 6 Atribute 2 -->
+                      <td>XXL</td>
+                      <!-- 7 Amount -->
+                      <td>1</td>
+                      <!-- 8 Price -->
+                      <td>650</td>
+                      <!-- 9 Sum -->
+                      <td>650</td>
+                      <!-- 10 Available -->
+                      <td><span>-</span> 24 <span>+</span></td>
+                      <!-- 11 Actions -->
+                      <td><span>***</span></td>
+                    </tr>
+                    <!-- PRODUCT 2 -->
+                    <tr>
+                      <!-- 1 Foto -->
+                      <td>
+                        <img
+                          src="./images/products/v01-g10245-art561sd15.jpg"
+                          alt="v01-g10245-art561sd15"
+                        />
+                      </td>
+                      <!-- 2 Product name -->
+                      <td>Капелюх жіночий</td>
+                      <!-- 3 SQU № -->
+                      <td><span>Art.</span> v01-g10245-art561sd15</td>
+                      <!-- 4 Element № -->
+                      <td>1/5</td>
+                      <!-- 5 Atribute 1 -->
+                      <td>Зелений</td>
+                      <!-- 6 Atribute 2 -->
+                      <td>XXL</td>
+                      <!-- 7 Amount -->
+                      <td>1</td>
+                      <!-- 8 Price -->
+                      <td>650</td>
+                      <!-- 9 Sum -->
+                      <td>650</td>
+                      <!-- 10 Available -->
+                      <td><span>-</span> 24 <span>+</span></td>
+                      <!-- 11 Actions -->
+                      <td><span>***</span></td>
+                    </tr>
+                    <!-- PRODUCT 3 -->
+                    <tr>
+                      <!-- 1 Foto -->
+                      <td>
+                        <img
+                          src="./images/products/v02-g12245-art654651.jpg"
+                          alt="v02-g12245-art654651"
+                        />
+                      </td>
+                      <!-- 2 Product name -->
+                      <td>Комбінезон жіночий Ralph Lauren</td>
+                      <!-- 3 SQU № -->
+                      <td><span>Art.</span> v02-g12245-art654651</td>
+                      <!-- 4 Element № -->
+                      <td>1</td>
+                      <!-- 5 Atribute 1 -->
+                      <td>Червоний</td>
+                      <td></td>
+                      <!-- 6 Atribute 2 -->
+                      <td>XL</td>
+                      <!-- 7 Amount -->
+                      <td>2</td>
+                      <!-- 8 Price -->
+                      <td>650</td>
+                      <!-- 9 Sum -->
+                      <td>1300</td>
+                      <!-- 10 Available -->
+                      <td><span>-</span> 15 <span>+</span></td>
+                      <!-- 11 Actions -->
+                      <td><span>***</span></td>
+                    </tr>
+                    <!-- PRODUCT 1 -->
+                    <tr>
+                      <!-- 1 Foto -->
+                      <td>
+                        <img
+                          src="./images/products/v00-g10245-art561sd15.jpg"
+                          alt="v00-g10245-art561sd15"
+                        />
+                      </td>
+                      <!-- 2 Product name -->
+                      <td>Комбінезон жіночий Ralph Lauren</td>
+                      <!-- 3 SQU № -->
+                      <td><span>Art.</span> v02-g12245-art654651</td>
+                      <!-- 4 Element № -->
+                      <td>1/5</td>
+                      <!-- 5 Atribute 1 -->
+                      <td>Зелений</td>
+                      <!-- 6 Atribute 2 -->
+                      <td>XXL</td>
+                      <!-- 7 Amount -->
+                      <td>1</td>
+                      <!-- 8 Price -->
+                      <td>650</td>
+                      <!-- 9 Sum -->
+                      <td>650</td>
+                      <!-- 10 Available -->
+                      <td><span>-</span> 24 <span>+</span></td>
+                      <!-- 11 Actions -->
+                      <td><span>***</span></td>
+                    </tr>
+                    <!-- PRODUCT 2 -->
+                    <tr>
+                      <!-- 1 Foto -->
+                      <td>
+                        <img
+                          src="./images/products/v01-g10245-art561sd15.jpg"
+                          alt="v01-g10245-art561sd15"
+                        />
+                      </td>
+                      <!-- 2 Product name -->
+                      <td>Капелюх жіночий</td>
+                      <!-- 3 SQU № -->
+                      <td><span>Art.</span> v01-g10245-art561sd15</td>
+                      <!-- 4 Element № -->
+                      <td>1/5</td>
+                      <!-- 5 Atribute 1 -->
+                      <td>Зелений</td>
+                      <!-- 6 Atribute 2 -->
+                      <td>XXL</td>
+                      <!-- 7 Amount -->
+                      <td>1</td>
+                      <!-- 8 Price -->
+                      <td>650</td>
+                      <!-- 9 Sum -->
+                      <td>650</td>
+                      <!-- 10 Available -->
+                      <td><span>-</span> 24 <span>+</span></td>
+                      <!-- 11 Actions -->
+                      <td><span>***</span></td>
+                    </tr>
+                    <!-- PRODUCT 3 -->
+                    <tr>
+                      <!-- 1 Foto -->
+                      <td>
+                        <img
+                          src="./images/products/v02-g12245-art654651.jpg"
+                          alt="v02-g12245-art654651"
+                        />
+                      </td>
+                      <!-- 2 Product name -->
+                      <td>Комбінезон жіночий Ralph Lauren</td>
+                      <!-- 3 SQU № -->
+                      <td><span>Art.</span> v02-g12245-art654651</td>
+                      <!-- 4 Element № -->
+                      <td>1</td>
+                      <!-- 5 Atribute 1 -->
+                      <td>Червоний</td>
+                      <td></td>
+                      <!-- 6 Atribute 2 -->
+                      <td>XL</td>
+                      <!-- 7 Amount -->
+                      <td>2</td>
+                      <!-- 8 Price -->
+                      <td>650</td>
+                      <!-- 9 Sum -->
+                      <td>1300</td>
+                      <!-- 10 Available -->
+                      <td><span>-</span> 15 <span>+</span></td>
+                      <!-- 11 Actions -->
+                      <td><span>***</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- // -->
+              </main>
+
+              <footer class="bottom sticky btm l">
+                <div class="flex center__nowrap gap">
+                  <button class="btn_gen accept" type="button">Прийняти</button>
+                  <button class="btn_gen decline" type="button">Скасувати</button>
+                </div>
+              </footer>
+            </div>
+          </main>
+          <footer class="ftr sticky btm l">
+            <span></span>
+          </footer>
+        </div>
+
+        <!-- Блок складські залишки -->
+        <div class="block ttn">
+          <header class="hdr sticky top l">
+            <span> ЗАГОЛОВОК БЛОКУ </span>
+          </header>
+
+          <main class="main">
+            <div class="overflow">
+              <header></header>
+              <!-- // -->
+              <main class="content">
+                <!-- TABLE TTN FLEXIBLE -->
+                <div class="container-table-ttn-flex">
+                  <!-- Відправник -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Відправник</li>
+                    <li class="tcolumn-2-ttn">Gendliar 012-513</li>
+                  </ul>
+                  <!-- Перевізник -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Перевізник</li>
+                    <li class="tcolumn-2-ttn">Укрпошта</li>
+                  </ul>
+                  <!-- Тип доставки -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Тип доставки</li>
+                    <li class="tcolumn-2-ttn">Відділення</li>
+                  </ul>
+                  <!-- Відділення -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Відділення</li>
+                    <li class="tcolumn-2-ttn">95102</li>
+                  </ul>
+                  <!-- Адрес -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Адрес</li>
+                    <li class="tcolumn-2-ttn">---адрес відділення---</li>
+                  </ul>
+                  <!-- Типи платежів -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Типи платежів</li>
+                    <li class="tcolumn-2-ttn">Бонуси. IBAN</li>
+                  </ul>
+                  <!-- Сума накладеного платежу -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Сума накладеного платежу</li>
+                    <li class="tcolumn-2-ttn">---відсутній---</li>
+                  </ul>
+                  <!-- Оголошена вартість -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Оголошена вартість</li>
+                    <li class="tcolumn-2-ttn">12500 грн.</li>
+                  </ul>
+                  <!-- Отримувач -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Отримувач</li>
+                    <li class="tcolumn-2-ttn">Тестер Тестович Тестеренко</li>
+                  </ul>
+                  <!-- Номер телефону -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Номер телефону</li>
+                    <li class="tcolumn-2-ttn">+380671234567</li>
+                  </ul>
+                  <!-- Тип контакту -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Тип контакту</li>
+                    <li class="tcolumn-2-ttn">Telegram. Viber.</li>
+                  </ul>
+                  <!-- Клментар клієнта -->
+                  <ul class="table-ttn-flex">
+                    <li class="tcolumn-1-ttn">Коментар клієнта</li>
+                    <li class="tcolumn-2-ttn">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur recusandae
+                      optio eius repudiandae beatae! Itaque magnam voluptatibus illo obcaecati
+                      dolores animi, voluptas, sint fugit, eligendi dolor labore deserunt nobis
+                      libero.
+                    </li>
+                  </ul>
+                </div>
+                <!-- Зона відправника -->
+                <div class="zone-sender">
+                  <div class="container-table-sender-flex">
+                    <!-- ТТН -->
+                    <ul class="table-ttn-flex">
+                      <li class="tcolumn-1-sender">ТТН</li>
+                      <li class="tcolumn-2-sender form-insert">1354681849</li>
+                    </ul>
+                    <!-- Оголошена вартість -->
+                    <ul class="table-ttn-flex">
+                      <li class="tcolumn-1-sender">Оголошена вартість, грн.</li>
+                      <li class="tcolumn-2-sender form-insert">10 250</li>
+                    </ul>
+                    <!-- Вартість доставки -->
+                    <ul class="table-ttn-flex">
+                      <li class="tcolumn-1-sender">Вартість доставки, грн.</li>
+                      <li class="tcolumn-2-sender form-insert">175</li>
+                    </ul>
+                    <!-- Коментар клієнту -->
+                    <ul class="table-ttn-flex">
+                      <li class="tcolumn-1-sender">Коментар клієнту</li>
+                      <li class="tcolumn-2-sender form-insert">
+                        Риищгтшгщшгшщ т шгтщшг рщшг рщшгтщшг щшгт щш щтшщ рщшгрнаекв кес гнпи
+                        гнпшнеа
+                      </li>
+                    </ul>
+                    <!-- нутрішній коментар -->
+                    <ul class="table-ttn-flex">
+                      <li class="tcolumn-1-sender">Внутрішній коментар</li>
+                      <li class="tcolumn-2-sender form-insert">
+                        Риищгтшгщшгшщ т шгтщшг рщшг рщшгтщшг щшгт щш щтшщ рщшгрнаекв кес гнпи
+                        гнпшнеа
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </main>
+              <!-- // -->
+              <footer class="bottom sticky btm l">
+                <div class="flex center__nowrap">
+                  <button class="btn_gen accept" type="button">Прийняти</button>
+
+                  <button class="btn_gen decline" type="button">Скасувати</button>
+                </div>
+              </footer>
+            </div>
+          </main>
+
+          <footer class="ftr sticky btm l">
+            <span></span>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

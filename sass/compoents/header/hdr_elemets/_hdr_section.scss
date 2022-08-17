@@ -1,0 +1,14 @@
+/* ШАПКА --- HEADER */
+.header {
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+
+  // width: 100%;
+  min-height: 56px;
+  padding: 8px 16px;
+
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}

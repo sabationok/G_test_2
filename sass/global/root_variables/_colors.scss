@@ -1,0 +1,34 @@
+:root {
+  --brand-clr__1: rgba(226, 54, 54, 0.95);
+
+  /* TEXT */
+  --text-clr__primary: #212121;
+  --text-clr__secondary: #6b6b6b;
+  /* ICONS */
+  --icon-clr__primary: #808080;
+  /* BLOCKS */
+  --block-hdr-font-clr: #212121;
+  --block-hdr-clr: rgba(109, 189, 255, 1);
+  --block-hdr-clr__primary: #ffffff;
+  --block-main-hdr-clr__primary: #ffffff;
+  --block-main-bcrnd-clr__primary: #ffffff;
+  --block-main-ftr-clr__primary: #ffffff;
+  --block-ftr-clr: rgba(109, 189, 255, 1);
+  --block-ftr-clr__primary: #ffffff;
+  /* TABLES */
+  --table-text-clr-__rimary: #212121;
+  --table-hdr-clr__primary: rgba(109, 189, 255, 0.8);
+  --table-hdr-clr: #ffffff;
+  // --table-hdr-clr: rgba(137, 202, 255, 0.8);
+  --table-row-clr__primary: #dadada7e;
+  --table-row-brdr-clr__primary: #c7c7c781;
+  --table-row-clr__hover: rgba(137, 202, 255, 0.5);
+  --td-bckrnd-clr__hover: rgba(137, 202, 255, 0.5);
+  --td-outline-clr: rgba(137, 202, 255, 1);
+
+  /* BUTTONS */
+  --button-border-active: 1px solid rgba(219, 219, 219, 0.8);
+  /* OTHERS */
+  --test-outline_d: 1px dashed tomato;
+  --test-outline_s: 1px solid tomato;
+}

@@ -1,0 +1,183 @@
+.block {
+  position: relative;
+  overflow: hidden;
+
+  min-width: 200px;
+
+  background-color: #ffffff;
+  border-radius: var(--block-brdr-radius);
+  box-shadow: var(--block-shadow);
+
+  & .li {
+    margin: 0;
+  }
+  /* ПОРОЖНІЙ БЛОК забрати цей клас перед використанням */
+  &.empty {
+    & .content {
+      background-color: thistle;
+    }
+  }
+  /* ШАПКА БЛОКУ */
+  & .hdr {
+    display: block;
+    z-index: 5;
+
+    color: var(--footer-block-clr);
+    font-weight: var(--block-hdr-font-weight);
+    font-size: var(--block-hdr-font-size);
+    line-height: 1.27;
+    white-space: nowrap;
+
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    border-top-left-radius: var(--block-brdr-radius);
+    border-top-right-radius: var(--block-brdr-radius);
+    background-color: var(--block-hdr-clr);
+    box-shadow: var(--block-hdr-shadow);
+  }
+  /* КОНТЕНТ БЛОКУ */
+  & .main {
+    position: relative;
+    // display: block;
+    padding-left: 6px;
+    /* padding-right: 6px; */
+    .overflow {
+      //   display: block;
+      position: relative;
+      overflow: auto;
+    }
+    /* main header */
+    & .top {
+      display: block;
+      padding: 9px;
+      background-color: var(--block-main-hdr-clr);
+    }
+    /* main content */
+    & .content {
+      // display: block;
+      position: relative;
+    }
+    /* main footer */
+    & .bottom {
+      display: block;
+      padding: 10px;
+      z-index: 9;
+
+      // background-color: var(--block-main-ftr-clr);
+    }
+  }
+  /* ПІДВАЛ БЛОКУ */
+  & .ftr {
+    display: block;
+    z-index: 10;
+
+    width: 100%;
+    height: 5px;
+
+    border-bottom-left-radius: var(--block-brdr-radius);
+    border-bottom-right-radius: var(--block-brdr-radius);
+    background-color: var(--block-ftr-clr);
+    box-shadow: var(--block-ftr-shadow);
+  }
+}
+
+/* type constructor --- конструктор типів */
+.block {
+  &.table {
+    &.products {
+      flex-basis: 1000px;
+      flex-grow: 5;
+      /* max-width: 100%; */
+      & .content {
+        height: 200px;
+      }
+    }
+    &.orders {
+      flex-basis: 1000px;
+      flex-grow: 5;
+      /* max-width: 100%; */
+      & .content {
+        min-height: 50px;
+        max-height: 100px;
+      }
+    }
+    &.returns {
+      flex-basis: 1000px;
+      flex-grow: 5;
+      /* max-width: 100%; */
+      & .content {
+        min-height: 50px;
+        max-height: 100px;
+      }
+    }
+  }
+  &.info {
+    &.product {
+      flex-basis: 200px;
+      flex-grow: 5;
+
+      min-width: 200px;
+      max-width: 1200px;
+      & .content {
+        height: 270px;
+      }
+    }
+    &.order {
+      flex-basis: 200px;
+      flex-grow: 5;
+
+      min-width: 200px;
+      max-width: 1200px;
+      & .content {
+        min-height: 50px;
+        max-height: 150px;
+      }
+    }
+    &.return {
+      flex-basis: 200px;
+      flex-grow: 5;
+
+      min-width: 200px;
+      max-width: 1200px;
+      & .content {
+        min-height: 50px;
+        max-height: 150px;
+      }
+    }
+  }
+  &.stock {
+    flex-basis: 400px;
+    flex-grow: 1;
+
+    min-width: 200px;
+    max-width: 1000px;
+    & .content {
+      min-height: 50px;
+      max-height: 100px;
+    }
+  }
+  &.ttn {
+    flex-basis: 400px;
+    flex-grow: 1;
+
+    min-width: 200px;
+    max-width: 1000px;
+    & .content {
+      height: 270px;
+    }
+  }
+  &.inspection {
+    flex-basis: 400px;
+    flex-grow: 1;
+
+    min-width: 200px;
+    max-width: 1000px;
+    & .content {
+      min-height: 50px;
+      max-height: 100px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/* ------------------------------- ФІЛЬТРАЦІЯ ЗАМОВЛЕНЬ --- filtr orders */
+.container-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  min-height: 30px;
+}
+/* ---- ПОШУК --- founder */
+.form-founder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // flex-wrap: wrap;
+  gap: 10px;
+  margin-right: auto;
+  .founder {
+    display: block;
+
+    color: #212121;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1.27;
+    text-align: left;
+    & .inp__found {
+      width: 190px;
+      min-height: 20px;
+      border-radius: 2px;
+      border: 1px solid rgba(197, 197, 197, 0.849);
+      &:focus,
+      &:hover {
+        border: 1px solid rgba(45, 136, 255, 0.993);
+      }
+      &:active,
+      &:focus,
+      &:focus-visible {
+        border: 1px solid rgba(45, 136, 255, 0.993);
+        outline: 1px solid rgba(45, 136, 255, 0.993);
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}

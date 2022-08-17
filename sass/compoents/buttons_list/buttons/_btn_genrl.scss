@@ -1,0 +1,90 @@
+/* -------------------------- КНОПКИ */
+.btn_gen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid transparent;
+
+  // текстові
+  &.text {
+    padding: 8px 15px;
+    // white-space: nowrap;
+    text-align: center;
+    vertical-align: middle;
+    // розміри кнопок
+    &.l {
+      min-height: 32px;
+      min-width: 96px;
+      font-size: 12px;
+      line-height: 1.08;
+    }
+    &.xl {
+      min-height: 34px;
+      min-width: 116px;
+      font-size: 13px;
+      line-height: 1.1;
+    }
+    &.xxl {
+      min-height: 38px;
+      min-width: 140px;
+      font-size: 14px;
+      line-height: 1.12;
+    }
+  }
+  // кнопка з іконкою
+  &.icon {
+    min-width: 30px;
+    min-height: 30px;
+    padding: 7px;
+
+    & .icon-svg {
+      width: 20px;
+      height: 20px;
+      fill: var(--icon-clr-primary);
+    }
+    & .icon-png {
+      min-width: 26px;
+      min-height: 26px;
+    }
+    & .icon-jpeg {
+      min-width: 26px;
+      min-height: 26px;
+    }
+  }
+  // активність кнопки
+  &:focus,
+  &:hover {
+    box-shadow: var(--button-shadow-hover);
+  }
+  &:active {
+    box-shadow: var(--button-shadow-active);
+    border: var(--button-border-active);
+  }
+  /* ПРИЙНЯТИ --- ВІДХИЛИТИ */
+  &.accept {
+    color: #58af56;
+    &:active {
+      border-color: #58af56;
+    }
+  }
+  &.decline {
+    color: #d63328;
+    &:active {
+      border-color: #d63328;
+    }
+  }
+  /* BUTTON NAV MENU */
+  &.btn-nav {
+    position: relative;
+
+    &.current {
+      background-color: rgba(226, 54, 54, 0.35);
+    }
+  }
+}
